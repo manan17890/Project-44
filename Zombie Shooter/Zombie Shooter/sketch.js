@@ -75,8 +75,8 @@ function draw() {
     spawnzombie2();
     terminator.collide(invisibleGround);
     terminator.collide(invisibleGround2);
-
-
+    terminator.visible = true;
+    
   if (keyDown("enter")) {
     createBullet();
     }
@@ -124,6 +124,8 @@ function draw() {
     zombieGroup1.setVelocityXEach(0);
     zombieGroup2.setVelocityXEach(0);
   
+    terminator.x= 50;
+    terminator.y= 340;
 
     gameover.lifetime = 20000
     restart.lifetime = 10000
